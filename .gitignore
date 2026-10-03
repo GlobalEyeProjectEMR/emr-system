@@ -1,25 +1,37 @@
-# Gradle
+HELP.md
 .gradle
-**/build/
-!**/src/**/build/
-gradle-app.setting
-.gradletasknamecache
-!gradle-wrapper.jar
-!gradle-wrapper.properties
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# IDEs (IntelliJ, Eclipse, VS Code)
-.idea/
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
 *.iml
 *.ipr
-*.iws
-.project
-.classpath
-.settings/
-.factorypath
-.vscode/
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
-# Logs and OS Files
-logs/
-*.log
-.DS_Store
-Thumbs.db
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
