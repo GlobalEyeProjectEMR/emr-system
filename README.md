@@ -34,21 +34,8 @@ For new developers (such as Lily) joining the project, ensure your local develop
 * **Frontend**: Angular (Planned integration)
 * **Artifact Type**: Web Application Archive (`.war`)
 
----
-
-## 🗄️ Database Configuration (SQLite)
-
-Configure your local SQLite connection inside `src/main/resources/application.properties`:
-
-```properties
-# SQLite Datasource Configuration
-spring.datasource.url=jdbc:sqlite:emr.db
-spring.datasource.driver-class-name=org.sqlite.JDBC
-
-# MyBatis Configuration
-mybatis.mapper-locations=classpath:mapper/**/*.xml
-
 🚀 Getting Started (Step-by-Step)
+
 1. Clone the Repository and Switch Branch
 
 Open your terminal (PowerShell or Git Bash), clone the repository, and switch to the active feature branch:
@@ -81,21 +68,6 @@ Open your web browser and navigate to: http://localhost:8080/
 
     To stop the running application, press Ctrl + C in your terminal window.
 
-✅ Project To-Do List & Roadmap
-
-    [x] Initialize project structure and Gradle build configuration for Java 25 & Spring Boot 4.1.1
-
-    [x] Verify local WAR build and execution
-
-    [ ] Configure SQLite database connection in application.properties
-
-    [ ] Integrate MyBatis for database mapping and SQL queries
-
-    [ ] Implement patient registration backend logic and controllers
-
-    [ ] Set up Angular frontend project structure and UI components
-
-    [ ] Connect Angular frontend with Spring Boot backend APIs
 
 📝 Git Workflow & Committing Changes
 
@@ -116,3 +88,31 @@ Open your web browser and navigate to: http://localhost:8080/
     git push origin feature/registration
 
 
+
+✅ Project To-Do List & Roadmap
+
+    [x] Initialize project structure and Gradle build configuration for Java 25 & Spring Boot 4.1.1
+
+    [x] Verify local WAR build and execution
+
+    [ ] Configure SQLite database connection in application.properties
+
+    [ ] Integrate MyBatis for database mapping and SQL queries
+
+    [ ] Implement patient registration backend logic and controllers
+
+    [ ] Set up Angular frontend project structure and UI components
+
+    [ ] Connect Angular frontend with Spring Boot backend APIs
+
+## 🗄️ Database Configuration (SQLite)
+
+Configure your local SQLite connection inside `src/main/resources/application.properties`:
+
+```properties
+# SQLite Datasource Configuration
+spring.datasource.url=jdbc:sqlite:emr.db
+spring.datasource.driver-class-name=org.sqlite.JDBC
+
+# MyBatis Configuration
+mybatis.mapper-locations=classpath:mapper/**/*.xml
