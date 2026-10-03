@@ -36,7 +36,7 @@ For new developers (such as Lily) joining the project, ensure your local develop
 
 🚀 Getting Started (Step-by-Step)
 
-1. Clone the Repository and Switch Branch
+1. **Clone the Repository and Switch Branch** 
 
 Open your terminal (PowerShell or Git Bash), clone the repository, and switch to the active feature branch:
 
@@ -44,49 +44,46 @@ git clone <repository-url>
 cd emr-system
 git checkout feature/registration
 
-2. Verify Your Java Environment
+2. **Verify Your Java Environment** 
 
 Verify that your terminal is using Java 25:
 
 java -version
 
-3. Build the Project
+3. **Build the Project** 
 
-The project uses the Gradle wrapper (gradlew.bat). Run the clean build task to compile the application and generate the WAR file:
+    The project uses the Gradle wrapper (gradlew.bat). Run the clean build task to compile the application and generate the WAR file:
 
-.\gradlew.bat clean build
+        .\gradlew.bat clean build
+    Once built successfully, the deployment package is located at:
+        build/libs/emr-system-0.0.1-SNAPSHOT.war
 
-Once built successfully, the deployment package is located at:
-build/libs/emr-system-0.0.1-SNAPSHOT.war
-4. Run the Application Locally
-
-Run the packaged WAR file directly using Java:
-
-java -jar build/libs/emr-system-0.0.1-SNAPSHOT.war
-
-Open your web browser and navigate to: http://localhost:8080/
-
-    To stop the running application, press Ctrl + C in your terminal window.
+4. **Run the Application Locally**
+    
+    Run the packaged WAR file directly using Java:
+        java -jar build/libs/emr-system-0.0.1-SNAPSHOT.war
+    
+    Open your web browser and navigate to: http://localhost:8080/
+        To stop the running application, press Ctrl + C in your terminal window.
 
 
 📝 Git Workflow & Committing Changes
 
-    1) Check status of files:
-
-    git status
+    1) Check status of files: 
+    
+        git status
 
     2) Stage all modifications and new files:
-
-    git add .
+    
+        git add .
 
     3) Commit with a clear descriptive message:
-    
-    git commit -m "Your descriptive commit message here"
+
+        git commit -m "Your descriptive commit message here"
 
     4) Push your changes to the remote branch:
 
-    git push origin feature/registration
-
+        git push origin feature/registration
 
 
 ✅ Project To-Do List & Roadmap
